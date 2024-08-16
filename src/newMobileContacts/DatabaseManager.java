@@ -26,6 +26,9 @@ public class DatabaseManager {
             System.out.println("Failed to add contact. Please try again.");
         }
     }
+    public void allContactInteractive() {
+        contactController.allContacts();
+    }
 
     public void removeContactInteractive() {
         Scanner scanner = new Scanner(System.in);
@@ -34,7 +37,7 @@ public class DatabaseManager {
 
         boolean success = contactController.removeContactByMobile(mobile);
         if (success) {
-            System.out.println("Contact removed successfully.");
+            System.out.println("Contact: " + mobile + " removed successfully.");
         }else {
             System.out.println("Failed to remove contact.");
         }

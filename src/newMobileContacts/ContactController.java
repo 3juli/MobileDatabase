@@ -84,6 +84,25 @@ public class ContactController {
         }
         return false;// Ak nenájde zhodu, vráti false
     }
+
+    public void allContacts() {
+        try {
+            List<String> lines = Files.readAllLines(path);
+
+            //preskoci prve 3 riadku, ktore neobsahuju kontakty
+            for (int i = 3; i < lines.size(); i++) {
+                System.out.println(lines.get(i));
+            }
+            if (lines.size()<= 3) {
+                System.out.println("No contact found.");
+            }
+
+
+        }catch (IOException e) {
+            e.printStackTrace();
+            System.out.println("Failed to read contacts from the file.");
+        }
+    }
     public boolean removeContactByMobile(String mobile) {
         try {
             //precita vsetku riadku zo suboru

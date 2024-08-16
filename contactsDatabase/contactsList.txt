@@ -1,7 +1,6 @@
 Contact Database
-4
+3
 Name; Phone; Mobile; Email
-Julia;   45451212; +421944233233; julia.big@gmail.com
 Julia; 122121; +421023321145; j.m@gmail.com
 Michal; 4854579; +421123456789; michal@gmail.com
-julia; 45451212; +421324432234; julia.mala@gmail.com
+Viki; 454524; +421944944944; viki@gmail.com
